@@ -1,5 +1,5 @@
 name: Verify Human Identity
-
+run: clawhub install verified-agent-identity --force
 on:
   workflow_dispatch:
 
@@ -20,7 +20,7 @@ jobs:
         run: npm install -g clawhub
 
       - name: Install Verified Agent Identity
-        run: clawhub install verified-agent-identity
+        run: npx clawhub install verified-agent-identity
 
       - name: Install dependencies
         run: |
